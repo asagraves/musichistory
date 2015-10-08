@@ -1,4 +1,73 @@
 
+#content-div {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+nav {
+	background-color: #FFB4B0;
+	border: 2px solid black;
+	padding: 5px;
+	margin-bottom: 5px;
+
+
+}
+
+
+#div-1 {
+
+	background-color: #4DD7FA;
+	border: 2px solid black;
+	padding: 5px;
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+	height: 275px;
+	
+}
+
+#div-1 input[type="submit"]{
+	width: 45%;
+	margin: 25px auto;
+	display: block;
+	font-size: 20px;
+}
+
+
+
+
+#div-2 {
+	background-color: #FEFAC0;
+	border: 2px solid black;
+	padding: 5px;
+	display: inline-block;
+	width: 70%;
+	height: auto;
+}
+
+#div-2 h1 {
+	font-size: 16px;
+}
+
+
+#div-2 p {
+	display: inline-block;
+	margin: 6px;
+}
+
+
+
+label {
+	display: block;
+}
+
+
+
+
+
 
 
 
