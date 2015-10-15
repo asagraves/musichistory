@@ -1,0 +1,167 @@
+
+.flex-container {
+  padding: 0;
+  list-style: none;
+  height: 25em;
+  display: flex;
+  -webkit-flex-direction: row;
+  -webkit-flex-wrap: wrap;
+
+}
+.flex-container > header { 
+  flex: 1 100%;
+  position: fixed;
+  width: 100%;
+  background-color: #FFB4B0;
+}
+
+header li {
+	display: inline;
+}
+.flex-container > footer { 
+  flex: 1 100%; 
+
+}
+.sidebar__left { 
+  flex-grow: 2;
+  margin-top: 75px;
+  margin-right: 5px;
+  background-color: #4DD7FA;
+  color: black;
+}
+
+.sidebar__right { 
+  flex-grow: 6;
+  margin-top: 75px;
+  background-color: #fefac0;
+  color: black;
+}
+       /*For seashell color For seashell color  from anderson$$$*/
+
+
+#javatarget p:nth-of-type(2n+1) {
+	background: mintcream;
+}
+#javatarget p:nth-of-type(2n+0) {
+	background: seashell;
+}
+
+      /*first paragraph bold*/
+#javatarget p:first-of-type {
+	font-weight: bold;
+}
+
+
+#submitbutton {
+	display: block;
+	margin: auto;
+	margin-top: 5px;
+}
+
+
+.flex-item {  
+  padding: 10px;
+  /* The width property here is important. Explain why */
+  width: 100px;
+  font-weight: normal;
+  font-size: 1em;
+  text-align: left;
+}
+
+#footer {
+	text-align: center;
+	margin-top: 1000px;
+}
+
+.genre {
+	display: inline-block;
+  	width: 49%;
+}
+
+.genre li {
+	display: block;
+	width: 100%;
+}
+
+.songs :nth-child(2n+1) {
+  border: 1px solid black;
+  color: #FFF5EE;
+}
+
+
+
+
+
+
+
+/*#content-div {
+	width: 750px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+
+nav {
+	background-color: #FFB4B0;
+	border: 2px solid black;
+	padding: 5px;
+	margin-bottom: 5px;
+
+}
+
+nav li {
+	display: inline;
+}
+
+
+#div-1 {
+
+	background-color: #4DD7FA;
+	border: 2px solid black;
+	padding: 5px;
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+	height: 300px;
+	margin: ;
+	
+}
+
+#div-1 input[type="submit"]{
+	width: 45%;
+	margin: 25px auto;
+	display: block;
+	font-size: 20px;
+}
+
+
+
+
+#div-2 {
+	background-color: #FEFAC0;
+	border: 2px solid black;
+	padding: 5px;
+	display: inline-block;
+	width: 70%;
+	height: 300px;
+}
+
+#div-2 h1 {
+	font-size: 14px;
+}
+
+
+#div-2 p {
+	display: inline-block;
+	margin: 6px;
+	font-size: 12px;
+}
+
+
+
+label {
+	display: block;
+}
+
+*/
