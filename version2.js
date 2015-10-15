@@ -11,15 +11,19 @@ songs[songs.length] = "Ironi!c > by Alanis Moris*ette on the album Jagged Little
 songs.push("Loose yourself to dance - By Daft Punk on the album RAM");
 songs.unshift("Peaches - By POTUS on the album POTUS");
 
-//Loop over the array and remove any words or characters that obviously don't belong.
 
 var javatarget = document.getElementById("javatarget");
 
-// Replacing certain characters with others
+      // Not sure about this..
+//var nchild1 = document.getElementById("nchild1");
 
+
+// Take out unneeded characters
 for (var i = 0; i < songs.length; i++) {
 	songs[i] = songs[i].replace(/[^a-zA-Z" ">-]/g, "");
+	// Replace certain character with others
 	songs[i] = songs[i].replace(/[>]/g, "-");
+
 	javatarget.innerHTML += "<p>" + songs[i] + "</p>";
 console.log(songs[i]);
 }

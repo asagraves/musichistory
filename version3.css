@@ -8,8 +8,6 @@
   -webkit-flex-wrap: wrap;
 
 }
-
-
 .flex-container > header { 
   flex: 1 100%;
   position: fixed;
@@ -20,21 +18,16 @@
 header li {
 	display: inline;
 }
-
-
 .flex-container > footer { 
   flex: 1 100%; 
 
 }
-
-
 .sidebar__left { 
   flex-grow: 2;
   margin-top: 75px;
   margin-right: 5px;
   background-color: #4DD7FA;
   color: black;
-
 }
 
 .sidebar__right { 
@@ -43,7 +36,34 @@ header li {
   background-color: #fefac0;
   color: black;
 }
+       /*For seashell color For seashell color  from anderson$$$*/
 
+
+#javatarget p:nth-of-type(2n+1) {
+	background: mintcream;
+}
+#javatarget p:nth-of-type(2n+0) {
+	background: seashell;
+}
+
+p.n-child1 {
+  font-weight: bold;
+}
+
+
+/*#n-child1 .songresult:nth-of-type(2n+1) {
+    background: mintcream;
+}
+
+#n-child1 .songresult:nth-of-type(2n+0) {
+    background: seashell;
+}*/
+
+/*.nchild1:nth-child(2n+0) {
+  border: 5px solid black;
+  color: #FFF5EE;
+}
+*/
 #submitbutton {
 	display: block;
 	margin: auto;
@@ -74,6 +94,13 @@ header li {
 	display: block;
 	width: 100%;
 }
+
+.songs :nth-child(2n+1) {
+  border: 1px solid black;
+  color: #FFF5EE;
+}
+
+
 
 
 
