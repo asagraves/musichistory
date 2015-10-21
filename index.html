@@ -1,14 +1,12 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" id="html">
 <head>
   <meta charset="utf-8">
   <title>Musichistory</title>
-  <link rel="stylesheet" type="text/css" href="musichistorystyle.css">
+  <link rel="stylesheet" type="text/css" href="version4.css">
 </head>
 <body>
-	<div id="container"> Hi my name is Andrew
-	</div>
 	<div id="content-div">
 		<nav>  
 		<ul>
@@ -38,12 +36,18 @@
 				<option>Pure Frosting</option>
 				<option>Meteora</option>
 			</select>
-				<label>Genre</label>
-	      		<input type="checkbox" name="rock" value="rock"> Rock
-	      		<input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock
-	      		<input type="checkbox" name="pop" value="pop"> Pop
-	      		<input type="checkbox" name="grunge" value="grunge"> Grunge
-	      		<input type="checkbox" name="electic" value="electric"> Electric
+
+				<li><label>Genre</label></li>
+			<div class="genre">
+	      		<li><input type="checkbox" name="rock" value="rock"> Rock</li>
+	      		<li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
+	      		<li><input type="checkbox" name="blues" value="blues"> Blues</li>
+	      	</div>
+	      	<div class="genre">
+	      		<li><input type="checkbox" name="pop" value="pop"> Pop</li>
+	      		<li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
+	      		<li><input type="checkbox" name="electic" value="electric"> Electric</li>
+	      	</div>
 	      	<input type="submit" value="Submit">
 		</div>
 		<div id="div-2">
@@ -61,7 +65,7 @@
 		</div>
 </div>
 
-<script type="text/javascript" src="version2.js"></script>
+<script type="text/javascript" src="version4.js"></script>
 </body>
 </html>
 

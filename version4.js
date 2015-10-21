@@ -24,7 +24,7 @@ for (var i = 0; i < songs.length; i++) {
 	// Replace certain character with others
 	songs[i] = songs[i].replace(/[>]/g, "-");
 
-	javatarget.innerHTML += "<p>" + songs[i] + "</p>";
+	javatarget.innerHTML += "<li class='songlist'>" + songs[i] + "</li>";
 console.log(songs[i]);
 }
 
