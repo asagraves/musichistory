@@ -35,7 +35,7 @@ nav li {
 	display: inline-block;
 	width: 25%;
 	vertical-align: top;
-	height: 3054px;
+	height: 354px;
 	margin-top: 75px;
 	
 }
@@ -86,3 +86,42 @@ label {
 	display: block;
 	margin: 5px;
 }
+
+#addmusic {
+	padding: 60px;
+	color: white;
+}
+
+.addMusicClass {
+	display: none;
+}
+
+#parentdiv {
+
+}
+
+#inputmusic {
+	padding: 55px;
+	color: white;
+}
+
+.addMusicClass {
+	/*margin-top: 75px;*/
+}
+
+.listbar {
+	/*padding: 75px;*/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
