@@ -61,7 +61,7 @@ nav li {
 	
 }
 #div-2 p {
-	display: inline-block;
+	display: block;
 	margin: 6px;
 	font-size: 12px;
 }
@@ -113,6 +113,13 @@ label {
 	/*padding: 75px;*/
 }
 
+.deleteSong {
+	margin: 5px;
+}
+
+#moreSongs {
+	margin-left: 200px;
+}
 
 
 
