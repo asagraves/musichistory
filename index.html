@@ -4,82 +4,88 @@
 <head>
   <meta charset="utf-8">
   <title>Musichistory</title>
-  <link rel="stylesheet" type="text/css" href="version4.css">
+
+  <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
 </head>
+
+
 <body>
-	<div id="content-div">
-		<nav>  
-		<ul class="listbar">
-			<li id="addmusic"> <a href="#">Add Music</a></li>
-			<li id="viewmusic"> <a href="#">View Music</a></li>
-		</ul>
-		</nav>
+	<div class="container">
+			<nav>  
+				<ul class="listbar">
+					<li id="addmusic"> <a href="#">Add Music</a></li>
+					<li id="viewmusic"> <a href="#">View Music</a></li>
+				</ul>
+			</nav>
+
+			<div id="inputmusic" class="addMusicClass">
+
+				<p>Song Name</p>
+					<input type="text" id="songName">
+
+				<p>Artist Name</p>
+					<input type="text" id="artistName">
+
+				<p>Album Name</p>
+					<input type="text" id="albumName">
+
+				<button id="button1">Add music</button>
+			</div>
+
+		<div class="row">
+			<div class="addMusicClass col-xs-3 col-md-3">
+				<div id="parentdiv">
+					<div id="div-1">
+						<label>Song length</label>
+							<input type="range">
+
+						<label id="artistselect">Artist</label>
+							<select id="artist-select"></select>
+						<label id="albumselect">Album</label>
+							<select id="album-select"></select>
+
+						<li><label>Genre</label></li>
+							<div class="genre">
+					      		<li><input type="checkbox" name="rock" value="rock"> Rock</li>
+					      		<li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
+					      		<li><input type="checkbox" name="blues" value="blues"> Blues</li>
+					      	</div>
+					      	<div class="genre">
+					      		<li><input type="checkbox" name="pop" value="pop"> Pop</li>
+					      		<li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
+					      		<li><input type="checkbox" name="electic" value="electric"> Electric</li>
+					      	</div>
+				      	<input type="submit" value="Submit">
+					</div>
+				</div>
+			</div>
+
+			<div class="addMusicClass col-xs-9 col-md-9">
 		
-		<div id="inputmusic" class="addMusicClass">
+			<div id="div-2">
 
-			<p>Song Name</p>
-				<input type="text" id="songName">
-
-			<p>Artist Name</p>
-				<input type="text" id="artistName">
-
-			<p>Album Name</p>
-				<input type="text" id="albumName">
-
-			<button id="button1">Add music</button>
-
-		</div>
-	<div id="parentdiv">
-		<div id="div-1">
-			<label>Song length</label>
-			<input type="range">
-
-			<label>Artist</label>
-			<select id="artist-select">
-				<option>Weezer</option>
-				<option>Daft Punk</option>
-				<option>Sytem of a down</option>
-				<option>POTUS</option>
-				<option>Linkin Park</option>
-			</select>
-
-			<label>Album</label>
-			<select id="album-select">
-				<option>Raditude</option>
-				<option>Random Access Memories</option>
-				<option>Toxicity</option>
-				<option>Pure Frosting</option>
-				<option>Meteora</option>
-			</select>
-
-				<li><label>Genre</label></li>
-			<div class="genre">
-	      		<li><input type="checkbox" name="rock" value="rock"> Rock</li>
-	      		<li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
-	      		<li><input type="checkbox" name="blues" value="blues"> Blues</li>
-	      	</div>
-	      	<div class="genre">
-	      		<li><input type="checkbox" name="pop" value="pop"> Pop</li>
-	      		<li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
-	      		<li><input type="checkbox" name="electic" value="electric"> Electric</li>
-	      	</div>
-	      	<input type="submit" value="Submit">
-		</div>
-
-		<div id="div-2">
-
-			<div id="javatarget"></div>
-			
-		</div>
-
-			<button id="moreSongs">More</button>
+				<div id="javatarget"></div>
+			<!-- <button id="moreSongs">More</button> -->
+			</div>
+			</div>
 		
+		</div>
 	</div>
+	
 
-	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+
+		<!-- // <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+			
+		 <!-- <script src="./lib/bower_components/jquery/dist/jquery.min.js"></script>
+	 //    <script src="./lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+		<!-- // <script type="text/javascript" src="script.js"></script> -->
+		<script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
 
 </body>
+
 </html>
 
 
