@@ -5,5 +5,5 @@ define(["jquery"], function($){
         url: "data/more-songs.json"
         }).done(cb);
     }
-  }
+  };
 });

@@ -5,5 +5,5 @@ define(["jquery"], function($){
 				url: "https://scorching-torch-9452.firebaseio.com/.json"
   			}).done(cb);
 		}
-	}
+	};
 });

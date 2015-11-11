@@ -1,18 +1,21 @@
-$("#addsong").click(function(e){
+define(["jquery"], function($){
 
-  var newSong = {
-    "name": $("#titleName").val()
-    "name": $("#artistName").val()
-    "name": $("#albumName").val()
-  }
-};
+  $("#button1").click(function(e){
 
-  $ajax({
-    ur: "https://scorching-torch-9452.firebaseio.com/songs.json"
-    method: "POST", 
-    data:JSON.stringify(newsong)
-  }).done(function(addedsong){
-    console.log("Your new song is", addedSong);
+    var newSong = {
+      "Title": $("#songName").val(),
+      "Artist": $("#artistName").val(),
+      "Album": $("#albumName").val()
+    };
+
+    $.ajax ({
+      url: "https://scorching-torch-9452.firebaseio.com/songs.json",
+      method: "POST",
+      data: JSON.stringify(newSong)
+    }).done(function(addedSong) {
+      console.log("Your new song is", addedSong);
+    });
   });
 });
+
 

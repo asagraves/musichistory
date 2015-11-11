@@ -13,18 +13,13 @@ define(["jquery", "hbs"], function($, Handlebars){
 
        require(['hbs!../templates/artistselect'],
         function (artistTemplate) {
-          $("#artist-select").append(artistTemplate(data));
-          $("#artist-select").change(function(){
-            $(this).parent(artistselect).show();
-            
-          })
-        })
+          $("#artist-select").append(artistTemplate(data));   
+        });
 
        require(['hbs!../templates/albumselect'],
         function (albumTemplate) {
           $("#album-select").append(albumTemplate(data));
-          // $()
-        })
+        });
      }
-    }
+    };
 });
