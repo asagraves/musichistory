@@ -1,0 +1,134 @@
+html {
+	background: url("http://hd.wallpaperswide.com/thumbs/apple_music_room-t2.jpg");
+	background-repeat: none;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+
+#content-div {
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+nav {
+	background-color: #FFB4B0;
+	border: 2px solid black;
+	padding: 3px;
+	margin-bottom: 25px;
+	position: fixed;
+	width: 95.2%;
+
+}
+
+nav li {
+	display: inline;
+}
+
+#div-1 {
+
+	background-color: #4DD7FA;
+	border: 2px solid black;
+	padding: 3px;
+	display: inline-block;
+	width: 25%;
+	vertical-align: top;
+	height: 354px;
+	margin-top: 75px;
+	
+}
+#div-1 input[type="submit"]{
+	width: 45%;
+	margin: 25px auto;
+	display: block;
+	font-size: 20px;
+}
+
+
+#div-2 {
+	background-color: #FEFAC0;
+	border: 2px solid black;
+	padding: 5px;
+	display: inline-block;
+	width: 70%;
+	height: 350px;
+	margin-top: 75px;
+}
+#div-2 h1 {
+	font-size: 14px;
+	
+}
+#div-2 p {
+	display: block;
+	margin: 6px;
+	font-size: 12px;
+}
+
+
+.genre {
+	display: inline-block;
+  	width: 49%;
+}
+
+.genre li {
+	display: block;
+	width: 100%;
+}
+
+
+label {
+	display: block;
+}
+
+#javatarget li {
+	display: block;
+	margin: 5px;
+}
+
+#addmusic {
+	padding: 60px;
+	color: white;
+}
+
+.addMusicClass {
+	display: none;
+}
+
+#parentdiv {
+
+}
+
+#inputmusic {
+	padding: 55px;
+	color: white;
+}
+
+.addMusicClass {
+	/*margin-top: 75px;*/
+}
+
+.listbar {
+	/*padding: 75px;*/
+}
+
+.deleteSong {
+	margin: 5px;
+}
+
+#moreSongs {
+	margin-left: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

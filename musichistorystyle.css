@@ -30,6 +30,7 @@ nav li {
 	vertical-align: top;
 	height: 300px;
 	
+	
 }
 
 #div-1 input[type="submit"]{
@@ -47,7 +48,7 @@ nav li {
 	border: 2px solid black;
 	padding: 5px;
 	display: inline-block;
-	width: 70%;
+	/*width: 70%;*/
 	height: 300px;
 }
 

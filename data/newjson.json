@@ -1,0 +1,29 @@
+{
+ "songs": {
+   "songId1": {
+     "Title":"We Own The Sky",
+     "Artist": "M83",
+     "Album": "Saturdays = Youth"
+   },
+    "songId2": {
+     "Title": "Rolling Waves" ,
+     "Artist": "The Naked And Famous",
+     "Album": "In Rolling Waves"
+    },
+   "songId3": {
+     "Title": "Dance Yourself Clean" ,
+     "Artist": "LCD Soundsystem",
+     "Album": "This Is Happening"
+   },
+  "songId4": {
+     "Title": "Kryptonite" ,
+     "Artist": "3Doors Down",
+     "Album": "The Better Life"
+   },
+  "songId5": {
+     "Title": "Sabotage",
+     "Artist": "Beasti Boys",
+     "Album": "III Communication"
+   }
+ }
+}

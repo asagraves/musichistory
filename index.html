@@ -1,94 +1,86 @@
 <!doctype html>
 
-<html lang="en">
+<html lang="en" id="html">
 <head>
   <meta charset="utf-8">
   <title>Musichistory</title>
-  <link rel="stylesheet" type="text/css" href="musichistorystyle.css">
+
+  <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
 </head>
 
 
-
 <body>
+	<div class="container">
+			<nav>  
+				<ul class="listbar">
+					<li id="addmusic"> <a href="#">Add Music</a></li>
+					<li id="viewmusic"> <a href="#">View Music</a></li>
+				</ul>
+			</nav>
 
-	<div id="content-div">
+			<div id="inputmusic" class="addMusicClass">
+				<p>Song Name</p>
+					<input type="text" id="songName">
+				<p>Artist Name</p>
+					<input type="text" id="artistName">
+				<p>Album Name</p>
+					<input type="text" id="albumName">
+				<button id="button1">Add music</button>
+			</div>
 
-		<nav>  
-		<ul>
-			<li>View music</li>
-			<li> <a href="#">Add Music</a></li>
-			<li> <a href="#">Profile</a></li>
-			
+		<div class="row">
+			<div class="addMusicClass col-xs-3 col-md-3">
+				<div id="parentdiv">
+					<div id="div-1">
+						<label>Song length</label>
+							<input type="range">
 
-		</ul>
+						<label id="artistselect">Artist</label>
+							<select id="artist-select"></select>
+						<label id="albumselect">Album</label>
+							<select id="album-select"></select>
 
+						<li><label>Genre</label></li>
+							<div class="genre">
+					      		<li><input type="checkbox" name="rock" value="rock"> Rock</li>
+					      		<li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
+					      		<li><input type="checkbox" name="blues" value="blues"> Blues</li>
+					      	</div>
+					      	<div class="genre">
+					      		<li><input type="checkbox" name="pop" value="pop"> Pop</li>
+					      		<li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
+					      		<li><input type="checkbox" name="electic" value="electric"> Electric</li>
+					      	</div>
+				      	<input type="submit" value="Submit">
+					</div>
+				</div>
+			</div>
 
-		</nav>
+			<div class="addMusicClass col-xs-9 col-md-9">
+		
+				<div id="div-2">
 
-
-		<div id="div-1">
-			<label>Song length</label>
-			<input type="range">
-
-			<label>Artist</label>
-			<select id="artist-select">
-				<option>Weezer</option>
-				<option>Daft Punk</option>
-				<option>Sytem of a down</option>
-				<option>POTUS</option>
-				<option>Linkin Park</option>
-			</select>
-
-			<label>Album</label>
-			<select id="album-select">
-				<option>Raditude</option>
-				<option>Random Access Memories</option>
-				<option>Toxicity</option>
-				<option>Pure Frosting</option>
-				<option>Meteora</option>
-			</select>
-
-			
-				<label>Genre</label>
-
-	      		<input type="checkbox" name="rock" value="rock"> Rock
-	      		<input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock
-	      		<input type="checkbox" name="pop" value="pop"> Pop
-	      		<input type="checkbox" name="grunge" value="grunge"> Grunge
-	      		<input type="checkbox" name="electic" value="electric"> Electric
-
-	      	<input type="submit" value="Submit">
-			
-			
+				<!-- <button id="moreSongs">More</button> -->
+				</div>
+			</div>
 		</div>
+	</div>
+	
 
 
-
-		<div id="div-2">
-			<h1>Can't stop partying</h1>
-				<p>Weezer | Raditude | Pop</p>
-				
-			<h1>Get Lucky</h1>
-				<p>Daft Punk | Random access memories| Electric</p>
-				
-			<h1>Toxicity</h1>
-				<p>System of a down | Toxicity | Grunge</p>
-				
-			<h1>Meteora</h1>
-				<p>Linkin Park | Meteora | Rock</p>
-				
-			<h1>Lump</h1>
-				<p>POTUS | POTUS | Pop-rock</p>
-				
-		</div>
-
-
-</div>
-
-
-
+		<!-- // <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+			
+		 <!-- <script src="./lib/bower_components/jquery/dist/jquery.min.js"></script>
+	 //    <script src="./lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+		<!-- // <script type="text/javascript" src="script.js"></script> -->
+		<script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
+		
 
 </body>
 
 </html>
+
 
