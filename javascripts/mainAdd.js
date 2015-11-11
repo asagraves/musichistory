@@ -18,4 +18,4 @@ define(["jquery"], function($){
   });
 });
 
-
+// make ajax call to firebase to get data

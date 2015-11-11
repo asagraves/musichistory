@@ -1,0 +1,61 @@
+
+  function returnData() {
+    return addSongToDom;
+  }
+
+
+      // *******have selected artist displey in dom**********
+
+    // $.ajax( {
+    //   url: "https://scorching-torch-9452.firebaseio.com/.json"
+    // }).done(function(data){
+    //   console.log(data.songs);
+      // for(var key in data.songs){
+      //   console.log("bruh");
+      // }
+
+      var filtersong = {
+    songs: {
+     }
+    }
+
+  // var eventobject;
+    $("#artist-select").change(function(){
+      
+      // Get what artist user chose
+      var selectedartist = $(this).val();
+      // Loop over songs key in Firebase object
+        for (var key in data.songs) {
+          console.log("msdfasdfasdfasdfsadf");
+      // Compare the .artist key on each songs to `selectedArtist`
+          var currentsong = data.songs[key]
+          // console.log(currentsong);
+      // If they are the same, add the current song to a new
+          if (currentsong.Artist === selectedartist) {
+      // // object named `filteredSongs.songs`
+            filtersong.songs[key] = currentsong
+          }
+      // Send filteredSongs to Handlebar tempalte
+      }
+      console.log(filtersong.songs);
+
+      // require(["hbs!../templates/outputartist"], function(songTemplate){
+      //     $("#div-2").html(songTemplate(filtersong.songs));
+      //     filtersong = {};
+     //DOES NOT WORK IF YOU HAVE MULTIPLE SONGS FROM ONE ALBUM, outputs same one multiple times
+    });
+
+
+        // {
+        //   songs: {
+
+        //   }
+        // }
+      
+    });
+      
+  //   });
+  // });
+
+  // });
+  
