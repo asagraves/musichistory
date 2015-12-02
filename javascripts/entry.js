@@ -17,9 +17,9 @@ requirejs.config({
       }
     }
 });
-require(["firebase", "eventHandlers", "bootstrap", "hbs", "get-songs", "mainAdd", "logsong", "script", "dom-songs"], 
+require(["firebase", "bootstrap", "hbs", "get-songs", "mainAdd", "logsong", "script", "dom-songs"], 
 
-  function (Firebase, eventHandlers, bootstrap, hbs, mySongs, addFirebase, logSong, script, toDom){
+  function (Firebase, bootstrap, hbs, mySongs, addFirebase, logSong, script, toDom){
   	// console.log("working");
 
     var allSongsObject = {};
@@ -33,7 +33,7 @@ require(["firebase", "eventHandlers", "bootstrap", "hbs", "get-songs", "mainAdd"
     $("button1").on("click", logSong.addSongToList);
 
      // Initialize the event handlers
-    eventHandlers.init({songArray: originalSongsArray});
+    // eventHandlers.init({songArray: originalSongsArray});
     
 
 
@@ -88,7 +88,7 @@ require(["firebase", "eventHandlers", "bootstrap", "hbs", "get-songs", "mainAdd"
 // *********firebase********
 
 // function firebase() {}
-
+// eventHandlers.init({songArray: originalSongsArray});
 // Create a reference to your Firebase database
 
 var firebase = new Firebase("https://scorching-torch-9452.firebaseio.com/");
@@ -99,14 +99,35 @@ var firebase = new Firebase("https://scorching-torch-9452.firebaseio.com/");
       // Store the entire songs key in a local variable
       var allSongsObject = snapshot.val();
 
+      // Empty out the module-level song array
+      allSongsArray = [];
+
+      // Convert Firebase's object of objects into an array of objects
+      for (var key in allSongsObject) {
+        allSongsArray[allSongsArray.length] = allSongsObject[key];
+      }
+
+      // Create my base object that will get bound to the 
+      // song list Handlebar template (Handlebar templates
+      // always need objects)
+      allSongsObject = { songs: allSongsArray };
+
+      /*
+        Create a copy of the allSongsArray so that when
+        the user clicks the "Clear Filter" button, we can 
+        set it back to the original data.
+       */
+      originalSongsArray = allSongsArray.slice();
+
       // Bind the song object to the song list template
       $("#songList").html(toDom.addSongToDom(allSongsObject));
       console.log(toDom);
 
       // Make an array of unique artist names
-      function unique(){
-        return unique;
-      }
+      var unique = function(unique){
+        //need unique to take an object, go through object, push unique artist onto array, then return that array
+
+      })
       var uniqueArtists = unique(allSongsObject).uniqueArtists;
 
       // Bind the unique artists to the filteredArtists template
@@ -119,7 +140,7 @@ var firebase = new Firebase("https://scorching-torch-9452.firebaseio.com/");
       $("#albumselect").html(toDom.addSongToDom({albums:uniqueAlbums }));
 
       // Update event handlers with new data
-      eventHandlers.updateSongs(originalSongsArray);
+      // eventHandlers.updateSongs(originalSongsArray);
 
     });
 
