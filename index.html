@@ -3,10 +3,18 @@
 <html lang="en" id="html">
 <head>
   <meta charset="utf-8">
-  <title>Musichistory</title>
-  <link rel="stylesheet" type="text/css" href="version4.css">
+  <title>Testing Angular</title>
+  <link rel="stylesheet" type="text/css" href="musichistorystyle.css">
 </head>
-<body>
+
+<body ng-app="SongApp">
+
+
+
+
+
+
+
 	<div id="content-div">
 		<nav>  
 		<ul class="listbar">
@@ -28,7 +36,8 @@
 
 			<button id="button1">Add music</button>
 
-		</div>
+		</div> <!--end of inputmusic -->
+
 	<div id="parentdiv">
 		<div id="div-1">
 			<label>Song length</label>
@@ -57,29 +66,41 @@
 	      		<li><input type="checkbox" name="rock" value="rock"> Rock</li>
 	      		<li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
 	      		<li><input type="checkbox" name="blues" value="blues"> Blues</li>
-	      	</div>
+	     </div> <!-- end of genre div -->
 	      	<div class="genre">
 	      		<li><input type="checkbox" name="pop" value="pop"> Pop</li>
 	      		<li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
 	      		<li><input type="checkbox" name="electic" value="electric"> Electric</li>
 	      	</div>
 	      	<input type="submit" value="Submit">
-		</div>
+		</div> <!-- end of div-1 -->
+
+
 
 		<div id="div-2">
-
 			<div id="javatarget"></div>
-			
+			<div ng-view></div>
 		</div>
 
-			<button id="moreSongs">More</button>
-		
-	</div>
+	</div> <!--end of parentdiv -->
+
+
+
+
 
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script src="lib/bower_components/angular/angular.min.js"></script>
+	<script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+	<script src="app/app.js"></script>
+	<script src="app/controller/SongApp.js"></script>
+
+				  
 
 </body>
 </html>
+
+
+
+
 
 
