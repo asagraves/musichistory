@@ -1,6 +1,6 @@
 var readJSon = angular.module("angular", []);
 
-readJSon.controller("pullingJson", function($scope) {
+readJSon.controller("LoadSongsToDom", function($scope) {
 // promises via angular
 
   var getSongs = $q(function(resolve, reject) {

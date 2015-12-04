@@ -1,0 +1,99 @@
+
+<body ng-app="SongApp">
+
+
+
+
+
+
+
+  <div id="content-div">
+    <nav>  
+    <ul class="listbar">
+      <li id="addmusic"> <a href="#">Add Music</a></li>
+      <li id="viewmusic"> <a href="#">View Music</a></li>
+    </ul>
+    </nav>
+    
+    <div id="inputmusic" class="addMusicClass">
+
+      <p>Song Name</p>
+        <input type="text" id="songName">
+
+      <p>Artist Name</p>
+        <input type="text" id="artistName">
+
+      <p>Album Name</p>
+        <input type="text" id="albumName">
+
+      <button id="button1">Add music</button>
+
+    </div> <!--end of inputmusic -->
+
+  <div id="parentdiv">
+    <div id="div-1">
+      <label>Song length</label>
+      <input type="range">
+
+      <label>Artist</label>
+      <select id="artist-select">
+        <option>Weezer</option>
+        <option>Daft Punk</option>
+        <option>Sytem of a down</option>
+        <option>POTUS</option>
+        <option>Linkin Park</option>
+      </select>
+
+      <label>Album</label>
+      <select id="album-select">
+        <option>Raditude</option>
+        <option>Random Access Memories</option>
+        <option>Toxicity</option>
+        <option>Pure Frosting</option>
+        <option>Meteora</option>
+      </select>
+
+        <li><label>Genre</label></li>
+      <div class="genre">
+            <li><input type="checkbox" name="rock" value="rock"> Rock</li>
+            <li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
+            <li><input type="checkbox" name="blues" value="blues"> Blues</li>
+       </div> <!-- end of genre div -->
+          <div class="genre">
+            <li><input type="checkbox" name="pop" value="pop"> Pop</li>
+            <li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
+            <li><input type="checkbox" name="electic" value="electric"> Electric</li>
+          </div>
+          <input type="submit" value="Submit">
+    </div> <!-- end of div-1 -->
+
+
+
+    <div id="div-2">
+      <div id="javatarget"></div>
+      <div ng-view></div>
+    </div>
+
+  </div> <!--end of parentdiv -->
+
+
+
+
+
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="lib/bower_components/angular/angular.min.js"></script>
+  <script src="lib/bower_components/angular-route/angular-route.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/controller/SongApp.js"></script>
+
+          
+
+</body>
+</html>
+
+
+
+
+
+
+
