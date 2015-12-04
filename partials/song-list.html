@@ -1,12 +1,13 @@
-<div>
+<!-- <div>
   <input type="text" ng-model="query" />
-</div>
+</div> -->
 
-<div ng-repeat="song in songs">
+
+<div ng-repeat="songs in loadedsongarray">
   <!-- <a href="#/songs/{{ song.id }}">{{ song.name }}</a> -->
-  <h1>{{song.Title}}</h1>
-  <p>{{song.Artist}}</p>
-  <p>{{song.Album}}</p>
+  <h1>{{songs.name}}</h1>
+  <p>{{songs.artist}}</p>
+  <p>{{songs.album}}</p>
 
 </div>
 
