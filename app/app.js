@@ -7,12 +7,13 @@ app.config(['$routeProvider',
         templateUrl: 'partials/song-list.html',
         controller: 'SongDetailCtrl'
       })
-    .when('/songs-list/new', {
+    .when('/add-music', {
         templateUrl: 'partials/add-music.html',
-        controller: 'SongDetailCtrl'
+        controller: 'add-songs-cntrl'
       })
-    .otherwise('/songs-list');
+      .otherwise('/songs-list');
 }]);
+
 
 
 
