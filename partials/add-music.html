@@ -1,23 +1,21 @@
-<!-- <body ng-app=""> -->
-
-<!-- <div>
-  <input type="text" ng-model="addingSongsToDom" />
-</div> -->
-
-<!-- <div ng-repeat="adding songs into dom">
-
-  <div id="yikes">Hello?</div>
-
-</div>
-
-<h3>MONKEY BUTT</h3> -->
-
-
-<input/>
-
-<div>hello</div>
-
-
+<div id="add_form" ng-controller="add-songs-cntrl" >
+  <li class="music_selector">
+    <label class="inline">Song Name</label>
+    <input ng-model="newsong.title" type="text" id="song_name" name="song_name">
+  </li>
+  <li class="music_selector">
+    <label class="inline" for="artist_name">Artist Name</label>
+    <input ng-model="newsong.artist" type="text" id="artist_name" name="artist_name">
+  </li>
+  <li class="music_selector">
+    <label class="inline" for="album_name">Album Name</label>
+    <input ng-model="newsong.album" type="text" id="album_name" name="album_name">
+  </li>
+  
+  <li class="music_selector">
+    <button ng-click="addToArray()" class="add_button">Add a song</button>
+  </li>
+</div> <!-- end add_wrap -->
 
 
 
@@ -30,91 +28,3 @@
 
 
 
-
-
-<!-- 
-
-  <div id="content-div">
-    <nav>  
-    <ul class="listbar">
-      <li id="addmusic"> <a href="#">Add Music</a></li>
-      <li id="viewmusic"> <a href="#">View Music</a></li>
-    </ul>
-    </nav>
-    
-    <div id="inputmusic" class="addMusicClass">
-
-      <p>Song Name</p>
-        <input type="text" id="songName">
-
-      <p>Artist Name</p>
-        <input type="text" id="artistName">
-
-      <p>Album Name</p>
-        <input type="text" id="albumName">
-
-      <button id="button1">Add music</button>
-
-    </div> 
-
-  <div id="parentdiv">
-    <div id="div-1">
-      <label>Song length</label>
-      <input type="range">
-
-      <label>Artist</label>
-      <select id="artist-select">
-        <option>Weezer</option>
-        <option>Daft Punk</option>
-        <option>Sytem of a down</option>
-        <option>POTUS</option>
-        <option>Linkin Park</option>
-      </select>
-
-      <label>Album</label>
-      <select id="album-select">
-        <option>Raditude</option>
-        <option>Random Access Memories</option>
-        <option>Toxicity</option>
-        <option>Pure Frosting</option>
-        <option>Meteora</option>
-      </select>
-
-        <li><label>Genre</label></li>
-      <div class="genre">
-            <li><input type="checkbox" name="rock" value="rock"> Rock</li>
-            <li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
-            <li><input type="checkbox" name="blues" value="blues"> Blues</li>
-       </div> 
-          <div class="genre">
-            <li><input type="checkbox" name="pop" value="pop"> Pop</li>
-            <li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
-            <li><input type="checkbox" name="electic" value="electric"> Electric</li>
-          </div>
-          <input type="submit" value="Submit">
-    </div> 
-
-  </div> 
-
-
-
-
-
-  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-  <script src="lib/bower_components/angular/angular.min.js"></script>
-  <script src="lib/bower_components/angular-route/angular-route.min.js"></script>
-  <script src="app/app.js"></script>
-  <script src="app/controller/SongApp.js"></script>
-
-          
-
-</body>
-</html>
-
-
-
-
-
-
-
- -->
