@@ -1,16 +1,13 @@
-<!-- <div>
-  <input type="text" ng-model="query" />
-</div> -->
-
-
-
-
-<div id="hay" ng-repeat="songs in loadedsongarray">
-  <!-- <a href="#/songs/{{ song.id }}">{{ song.name }}</a> -->
+<div>
+  <div>Search Music</div>
+  <input type="text" ng-model="searchMusic" />
+</div>
+<div id="hay" ng-repeat="songs in loadedsongarray | filter: searchMusic">
   <h1>{{songs.name}}</h1>
   <p>{{songs.artist}}</p>
   <p>{{songs.album}}</p>
 
+    <button ng-click="deleteSong(songs)">Delete</button>
 </div>
 
 

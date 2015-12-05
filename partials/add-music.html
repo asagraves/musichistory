@@ -1,4 +1,5 @@
 <div id="add_form" ng-controller="add-songs-cntrl" >
+
   <li class="music_selector">
     <label class="inline">Song Name</label>
     <input ng-model="newsong.title" type="text" id="song_name" name="song_name">
@@ -11,10 +12,12 @@
     <label class="inline" for="album_name">Album Name</label>
     <input ng-model="newsong.album" type="text" id="album_name" name="album_name">
   </li>
-  
+
   <li class="music_selector">
     <button ng-click="addToArray()" class="add_button">Add a song</button>
   </li>
+
+
 </div> <!-- end add_wrap -->
 
 

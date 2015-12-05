@@ -7,7 +7,7 @@ app.controller("SongDetailCtrl",
     // So, here we can pluck out the id of the particular song,  
     // because we set it in the href of the link from song-list partial.
     $scope.songId = $routeParams.songId;
-
+    //firebase reference
     var ref = new Firebase("https://scorching-torch-9452.firebaseio.com/songs");
     $scope.songs = $firebaseArray(ref);
 
@@ -24,6 +24,15 @@ app.controller("SongDetailCtrl",
       .catch(function(error) {
         console.log("Error:", error);
       });
+
+      $scope.deleteSong = function(song) {
+        $scope.songs.$remove(song);
+      };
+
   }]
 );
+
+
+
+
 

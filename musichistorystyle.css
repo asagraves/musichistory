@@ -20,7 +20,7 @@ nav {
 	margin-bottom: 25px;
 	position: fixed;
 	width: 95.2%;
-
+	/*opacity: 0.2;*/
 }
 
 nav li {
@@ -37,6 +37,7 @@ nav li {
 	vertical-align: top;
 	height: 354px;
 	margin-top: 75px;
+	/*opacity: 0.2;*/
 	
 }
 #div-1 input[type="submit"]{
@@ -55,6 +56,7 @@ nav li {
 	width: 70%;
 	height: 350px;
 	margin-top: 75px;
+	/*opacity: 0.2;*/
 }
 #div-2 h1 {
 	font-size: 14px;
@@ -123,6 +125,16 @@ label {
 	margin-left: 200px;
 }
 
+#viewmusic {
+	/*color: white;
+	background-color: white;*/
+}
+
+#addmusic {
+	/*color: white;*/
+	color: white;
+
+}
 
 
 
