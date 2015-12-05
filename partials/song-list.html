@@ -3,7 +3,7 @@
   <input type="text" ng-model="searchMusic" />
 </div>
 <div id="hay" ng-repeat="songs in loadedsongarray | filter: searchMusic">
-  <h1>{{songs.name}}</h1>
+  <h1>{{songs.title}}</h1>
   <p>{{songs.artist}}</p>
   <p>{{songs.album}}</p>
 
