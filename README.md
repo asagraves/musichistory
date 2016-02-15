@@ -1,3 +1,12 @@
 # Andrew's Music History
 
-My project for NSS front end course.
+# Installation
+- git clone repository
+
+#Technologies
+- Javascript
+- Angular
+- JQuery
+- HTML
+- CSS
+
