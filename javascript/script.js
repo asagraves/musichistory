@@ -23,7 +23,7 @@ $.ajax({
             console.log("firstArrayObject", firstArrObjects);
 
             $("#div-2").append("<p>"+indivSong.Title+"  -  "+indivSong.Artist+"  -  "+indivSong.Album+"<button class='deleteSong'>Delete</button></p>");
-            
+
             //connect each button to event listener
             $(".deleteSong").click(function(){
                 $(this).parent().remove();
@@ -61,7 +61,7 @@ var newObj = {
 	    "Artist":$("#artistName").val(),
 	    "Album": $("#albumName").val()
 }
-	firstArrObjects.push(newObj); 
+	firstArrObjects.push(newObj);
 	console.log("newObj", newObj);
 	$("#div-2").append("<p>"+newObj.Title+"  -  "+newObj.Artist+"  -  "+newObj.Album+"<button class='deleteSong'>Delete</button></p>");
 	console.log("firstArrObjects", firstArrObjects);
@@ -75,7 +75,7 @@ var newObj = {
 
 
 function displayAdd(){
-		
+
 		var addDiv = $("#inputmusic");
 		// console.log(addDiv);
 		var songdiv = $("#parentdiv");
@@ -88,7 +88,7 @@ function displayAdd(){
 });
 
 function displayList(){
-	
+
 		var addDiv = $("#inputmusic");
 		// console.log(addDiv);
 		var songdiv = $("#parentdiv");
@@ -103,7 +103,7 @@ function displayList(){
 // })
 
 
- 
+
 
 
 
