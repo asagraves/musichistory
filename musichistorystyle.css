@@ -37,11 +37,18 @@ nav li {
 	display: inline-block;
 	width: 50%;
 	vertical-align: top;
+<<<<<<< HEAD
 	height: 354px;
 	margin-top: -147px;
 	margin-left: 650px;
 	color: white;
 	/*opacity: 0.2;*/
+=======
+	height: 300px;
+	
+	
+}
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6
 
 }
 #div-1 input[type="submit"]{
@@ -57,11 +64,16 @@ nav li {
 	border: 2px solid black;
 	padding: 5px;
 	display: inline-block;
+<<<<<<< HEAD
 	width: 550px;
 	height: 350px;
 	margin-top: 75px;
 	color: white;
 	/*opacity: 0.2;*/
+=======
+	/*width: 70%;*/
+	height: 300px;
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6
 }
 #div-2 h1 {
 	font-size: 14px;

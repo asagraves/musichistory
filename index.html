@@ -3,6 +3,7 @@
 <html lang="en" id="html">
 <head>
   <meta charset="utf-8">
+<<<<<<< HEAD
   <title>Testing Angular</title>
   <link rel="stylesheet" type="text/css" href="musichistorystyle.css">
 </head>
@@ -20,22 +21,74 @@
 		</nav>
 
 		<div id="inputmusic" class="addMusicClass">
+=======
+  <title>Musichistory</title>
 
+  <link rel="stylesheet" type="text/css" href="./lib/bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+  <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+</head>
+
+
+<body>
+	<div class="container">
+		<nav>  
+			<ul class="listbar">
+				<li id="addmusic"> <a href="#">Add Music</a></li>
+				<li id="viewmusic"> <a href="#">View Music</a></li>
+			</ul>
+		</nav>
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6
+
+		<div id="inputmusic" class="addMusicClass">
 			<p>Song Name</p>
 				<input type="text" id="songName">
-
 			<p>Artist Name</p>
 				<input type="text" id="artistName">
-
 			<p>Album Name</p>
 				<input type="text" id="albumName">
-
 			<button id="button1">Add music</button>
+<<<<<<< HEAD
 
 		</div> <!--end of inputmusic -->
+=======
+		</div>
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6
 
-		<div id="div-2">
+		<div class="row">
+			<div class="addMusicClass col-xs-3 col-md-3">
+				<div id="parentdiv">
+					<div id="div-1">
+						<label>Song length</label>
+							<input type="range">
 
+						<label id="artistselect">Artist</label>
+							<select id="artist-select"></select>
+						<label id="albumselect">Album</label>
+							<select id="album-select"></select>
+
+						<li><label>Genre</label></li>
+							<div class="genre">
+			      		<li><input type="checkbox" name="rock" value="rock"> Rock</li>
+			      		<li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
+			      		<li><input type="checkbox" name="blues" value="blues"> Blues</li>
+			      	</div>
+			      	<div class="genre">
+			      		<li><input type="checkbox" name="pop" value="pop"> Pop</li>
+			      		<li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
+			      		<li><input type="checkbox" name="electic" value="electric"> Electric</li>
+			      	</div>
+				      	<input type="submit" value="Submit">
+					</div>
+				</div>
+			</div>
+
+			<div class="addMusicClass col-xs-9 col-md-9">
+		
+				<div id="div-2">
+
+<<<<<<< HEAD
         <div id="javatarget">
           <div ng-view> </div>
         </div>
@@ -58,8 +111,26 @@
 	<!-- // <script src="app/controller/add-songs-cntrl.js"></script> -->
 
 
+=======
+				<!-- <button id="moreSongs">More</button> -->
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+
+		<!-- // <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> -->
+			
+		 <!-- <script src="./lib/bower_components/jquery/dist/jquery.min.js"></script>
+	 //    <script src="./lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> -->
+		<!-- // <script type="text/javascript" src="script.js"></script> -->
+		<script data-main="javascripts/entry" src="lib/bower_components/requirejs/require.js"></script>
+		
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6
 
 </body>
+
 </html>
 
 

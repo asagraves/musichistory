@@ -20,6 +20,7 @@
 //      "Artist": "LCD Soundsystem",
 //      "Album": "This Is Happening"
      
+<<<<<<< HEAD
 //    },
 //    {
 //      "id": 4,
@@ -55,6 +56,11 @@
 //    }
 //  ]
 // }
+=======
+   }   
+ ]
+}
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6
 
 
 

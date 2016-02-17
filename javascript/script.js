@@ -1,29 +1,70 @@
 firstArrObjects = [];
 
 $(document).ready(function() {
+	$("#inputmusic").hide();
+
+var moreSongsWereAdded = false;
 
 
+//ajax call songs
 $.ajax({
    url: "songs.json"
  }).done(function(data) {
-   // When you tell jQuery to read a file via the ajax method
-   // it reads the contents, and then executes whatever function
-   // that you specify here in the done() method, and passes in
-   // the contents of the file as the first argument.
+//    // When you tell jQuery to read a file via the ajax method
+//    // it reads the contents, and then executes whatever function
+//    // that you specify here in the done() method, and passes in
+//    // the contents of the file as the first argument.
    console.log("the contents of songs.json");
    console.log(data);
+});
 
+
+
+//ajax call songs2
+$.ajax({
+		url: "songs2.json"
+	}).done(function(data){
+		console.log("Second Data is: ", data.songs2);
+		$("#songs2").click(function(){
+				for(var i =0; i < data.songs2.length; i++){
+			var indivSong = data.songs2[i];
+			$("#indiv_songs").append("<p>"+indivSong.title+" - by "+indivSong.artist+" on the album "+indivSong.album+"<button class='deleteSong'>Delete</button></p>");
+
+			//connect each button to event listener
+			$(".deleteSong").click(function(){
+				$(this).parent().remove();
+			});
+
+		}
+		$("#songs2").prop("disabled", true);
+		moreSongsWereAdded = true;
+
+		});
+	// });
+
+
+//functions
+
+
+
+	//loop over songs in json
 	function loopOverMySongObjects(data){
         for(var i =0; i < data.songs.length; i++){
             console.log(data.songs[i]);
             var indivSong = data.songs[i];
-
-            //push into new array to for when user adds songs after seeing more
+            $("#indiv_songs").append("<p>"+indivSong.title+" - by "+indivSong.artist+" on the album "+indivSong.album+"<button class='deleteSong'>Delete</button></p>");
+            
+            //push into new array to for when user adds songs2 after seeing more
             firstArrObjects.push(indivSong);
             console.log("firstArrayObject", firstArrObjects);
 
+<<<<<<< HEAD:javascript/script.js
             $("#div-2").append("<p>"+indivSong.Title+"  -  "+indivSong.Artist+"  -  "+indivSong.Album+"<button class='deleteSong'>Delete</button></p>");
 
+=======
+            // $("#div-2").append("<p>"+indivSong.Title+"  -  "+indivSong.Artist+"  -  "+indivSong.Album+"<button class='deleteSong'>Delete</button></p>");
+            
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6:script.js
             //connect each button to event listener
             $(".deleteSong").click(function(){
                 $(this).parent().remove();
@@ -36,6 +77,12 @@ $.ajax({
 });
 
 
+
+
+
+
+
+
 var javatarget = $("#javatarget");
 
 
@@ -46,15 +93,19 @@ function inputSongs(){
 		console.log(songName);
 		console.log(artistName);
 		console.log(albumName);
+
 // var newObj = songName + " - " + artistName + " - "  + albumName;
-// 	firstArrObjects.push(newInput);
+	// firstArrObjects.push(newInput);
 	// console.log(songs);
+
 	javatarget.html("");
 	console.log("firstArrObjects", firstArrObjects);
 
 // for (var i = 0; i < songs.length; i++) {
 // 	javatarget.append("<li class='songlist'>" + songs[i] + "</li>");
 // 	}
+
+
 
 var newObj = {
 	    "Title": $("#songName").val(),
@@ -75,17 +126,32 @@ var newObj = {
 
 
 function displayAdd(){
+<<<<<<< HEAD:javascript/script.js
 
 		var addDiv = $("#inputmusic");
 		// console.log(addDiv);
 		var songdiv = $("#parentdiv");
+=======
+	var addDiv = $("#inputmusic");
+	// console.log(addDiv);
+	var songDiv = $("#parentdiv");
 
-		addDiv.removeClass("addMusicClass");
-		songdiv.addClass("addMusicClass");
+	addDiv.show()
+	songDiv.hide()
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6:script.js
+
+	// addDiv.removeClass("addMusicClass");
+	// songDiv.addClass("addMusicClass");
 }
+<<<<<<< HEAD:javascript/script.js
 		$("#addmusic").click(function(){
 			displayAdd();
       // console.log('hello', displayAdd)
+=======
+
+$("#addmusic").click(function(){
+	displayAdd();
+>>>>>>> d83cc4202f6192bee0fd6b57ea06a81947b1a2b6:script.js
 });
 
 function displayList(){
