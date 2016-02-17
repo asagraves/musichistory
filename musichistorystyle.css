@@ -4,6 +4,7 @@ html {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
+
 }
 
 
@@ -14,12 +15,14 @@ html {
 }
 
 nav {
-	background-color: #FFB4B0;
+	/*background-color: #F51482;*/
 	border: 2px solid black;
 	padding: 3px;
 	margin-bottom: 25px;
 	position: fixed;
-	width: 95.2%;
+	width: 30%;
+	color: white;
+	background: rgba(0,0,0,0);
 	/*opacity: 0.2;*/
 }
 
@@ -29,16 +32,17 @@ nav li {
 
 #div-1 {
 
-	background-color: #4DD7FA;
-	border: 2px solid black;
+	background-color: rgba(55, 2, 0, 0.9);;
 	padding: 3px;
 	display: inline-block;
-	width: 25%;
+	width: 50%;
 	vertical-align: top;
 	height: 354px;
-	margin-top: 75px;
+	margin-top: -147px;
+	margin-left: 650px;
+	color: white;
 	/*opacity: 0.2;*/
-	
+
 }
 #div-1 input[type="submit"]{
 	width: 45%;
@@ -49,19 +53,20 @@ nav li {
 
 
 #div-2 {
-	background-color: #FEFAC0;
+	background-color: rgba(55, 2, 0, 0.9);
 	border: 2px solid black;
 	padding: 5px;
 	display: inline-block;
-	width: 70%;
+	width: 550px;
 	height: 350px;
 	margin-top: 75px;
+	color: white;
 	/*opacity: 0.2;*/
 }
 #div-2 h1 {
 	font-size: 14px;
 	display: inline-block;
-	
+
 }
 #div-2 p {
 	display: block;

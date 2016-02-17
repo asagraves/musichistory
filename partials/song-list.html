@@ -1,20 +1,18 @@
-<div class="container">
-  <div class="row">
 
-    <div class="col-xs-6">Search Music</div>
-      <input type="text" ng-model="searchMusic" />
-    <div class="col-xs-6" id="hay" ng-repeat="songs in loadedsongarray | filter: andersonishelpingme | filter: searchMusic">
+<div>Search Music</div>
+  <input type="text" ng-model="searchMusic">
+<div class="col-xs-6" id="hay" ng-repeat="songs in loadedsongarray | filter: andersonishelpingme | filter: searchMusic">
 
-        <h1>{{songs.title}}</h1>
-        <p>{{songs.artist}}</p>
-        <p>{{songs.album}}</p>
+    <h1>{{songs.title}}</h1>
+    <p>{{songs.artist}}</p>
+    <p>{{songs.album}}</p>
 
-        <button ng-click="deleteSong(songs)">Delete</button>
-    </div>
-  </div>
+    <button ng-click="deleteSong(songs)">Delete</button>
+</div>
 
 
-  <div class="col-xs-6" id="parentdiv">
+
+  <div id="parentdiv">
       <div id="div-1">
         <label>Song length</label>
         <input type="range">
@@ -48,8 +46,8 @@
       </div> <!-- end of div-1 -->
    </div> <!--end of parentdiv -->
 
-  </div>
-</div>
+
+
 
 
 
