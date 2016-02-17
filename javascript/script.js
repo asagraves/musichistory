@@ -85,6 +85,7 @@ function displayAdd(){
 }
 		$("#addmusic").click(function(){
 			displayAdd();
+      // console.log('hello', displayAdd)
 });
 
 function displayList(){
