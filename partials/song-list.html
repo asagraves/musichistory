@@ -3,48 +3,46 @@
   <input type="text" ng-model="searchMusic">
 <div class="col-xs-6" id="hay" ng-repeat="songs in loadedsongarray | filter: andersonishelpingme | filter: searchMusic">
 
-    <h1>{{songs.title}}</h1>
-    <p>{{songs.artist}}</p>
-    <p>{{songs.album}}</p>
+    <h1>{{ songs.title }}</h1>
+    <p>{{ songs.artist }}</p>
+    <p>{{ songs.album }}</p>
 
     <button ng-click="deleteSong(songs)">Delete</button>
 </div>
 
+<div id="parentdiv">
+  <div id="div-1">
+    <label>Song length</label>
+    <input type="range">
+
+  <label for="artist">Artist:</label>
+    <select id="artist" name="artist" ng-model="andersonishelpingme">
+      <option></option>
+      <option ng-repeat="thing in songs">{{ thing.artist }}</option>
+    </select>
 
 
-  <div id="parentdiv">
-      <div id="div-1">
-        <label>Song length</label>
-        <input type="range">
-
-      <label for="artist">Artist:</label>
-          <select id="artist" name="artist" ng-model="andersonishelpingme">
-            <option></option>
-            <option ng-repeat="thing in songs">{{ thing.artist }}</option>
-          </select>
+    <p>Album</p>
+      <select name="album" ng-controller="SongDetailCtrl">
+        <option>Select Album</option>
+        <option ng-repeat="thing in songs| filter: songs.album"> {{ thing.album }}</option>
+      </select>
 
 
-        <p>Album</p>
-          <select name="album" ng-controller="SongDetailCtrl">
-            <option>Select Album</option>
-            <option ng-repeat="thing in songs| filter: songs.album"> {{ thing.album }}</option>
-          </select>
-
-
-          <li><label>Genre</label></li>
-        <div class="genre">
-              <li><input type="checkbox" name="rock" value="rock"> Rock</li>
-              <li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
-              <li><input type="checkbox" name="blues" value="blues"> Blues</li>
-         </div> <!-- end of genre div -->
-            <div class="genre">
-              <li><input type="checkbox" name="pop" value="pop"> Pop</li>
-              <li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
-              <li><input type="checkbox" name="electic" value="electric"> Electric</li>
-            </div>
-            <input type="submit" value="Submit">
-      </div> <!-- end of div-1 -->
-   </div> <!--end of parentdiv -->
+      <li><label>Genre</label></li>
+    <div class="genre">
+      <li><input type="checkbox" name="rock" value="rock"> Rock</li>
+      <li><input type="checkbox" name="pop-rock" value="pop-rock"> Pop-rock</li>
+      <li><input type="checkbox" name="blues" value="blues"> Blues</li>
+     </div> <!-- end of genre div -->
+      <div class="genre">
+        <li><input type="checkbox" name="pop" value="pop"> Pop</li>
+        <li><input type="checkbox" name="grunge" value="grunge"> Grunge</li>
+        <li><input type="checkbox" name="electic" value="electric"> Electric</li>
+      </div>
+        <input type="submit" value="Submit">
+  </div> <!-- end of div-1 -->
+ </div> <!--end of parentdiv -->
 
 
 

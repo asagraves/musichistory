@@ -9,7 +9,7 @@ app.config(['$routeProvider',
       })
     .when('/add-music', {
         templateUrl: 'partials/add-music.html',
-        controller: 'add-songs-cntrl'
+        controller: 'addSongsCtrl'
       })
       .otherwise('/songs-list');
 }]);
