@@ -1,22 +1,28 @@
+<div id="music-content">
 
-<div>Search Music</div>
-  <input type="text" ng-model="searchMusic">
-<div class="col-xs-6" id="hay" ng-repeat="songs in loadedsongarray | filter: andersonishelpingme | filter: searchMusic">
+  <div>Search Music</div>
+    <input type="text" ng-model="searchMusic">
+    <div ng-repeat="songs in loadedsongarray | filter: andersonishelpingme | filter: searchMusic">
 
-    <h1>{{ songs.title }}</h1>
-    <p>{{ songs.artist }}</p>
-    <p>{{ songs.album }}</p>
+      <h1>{{ songs.title }}</h1>
+      <p>{{ songs.artist }}</p>
+      <p>{{ songs.album }}</p>
 
-    <button ng-click="deleteSong(songs)">Delete</button>
+      <button ng-click="deleteSong(songs)">Delete</button>
+  </div>
+
 </div>
 
-<div id="parentdiv">
-  <div id="div-1">
+
+
+
+<div id="filter-music-div">
+
     <label>Song length</label>
     <input type="range">
 
   <label for="artist">Artist:</label>
-    <select id="artist" name="artist" ng-model="andersonishelpingme">
+    <select id="artist" name="artist">
       <option></option>
       <option ng-repeat="thing in songs">{{ thing.artist }}</option>
     </select>
@@ -41,8 +47,8 @@
         <li><input type="checkbox" name="electic" value="electric"> Electric</li>
       </div>
         <input type="submit" value="Submit">
-  </div> <!-- end of div-1 -->
- </div> <!--end of parentdiv -->
+
+</div>
 
 
 

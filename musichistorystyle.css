@@ -4,16 +4,7 @@ html {
 	background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
-
 }
-
-
-#content-div {
-	width: 100%;
-	margin-right: auto;
-	margin-left: auto;
-}
-
 nav {
 	/*background-color: #F51482;*/
 	border: 2px solid black;
@@ -25,34 +16,12 @@ nav {
 	background: rgba(0,0,0,0);
 	/*opacity: 0.2;*/
 }
-
 nav li {
 	display: inline;
 }
 
-#div-1 {
-
-	background-color: rgba(55, 2, 0, 0.9);;
-	padding: 3px;
-	display: inline-block;
-	width: 50%;
-	vertical-align: top;
-	height: 354px;
-	margin-top: -147px;
-	margin-left: 650px;
-	color: white;
-	/*opacity: 0.2;*/
-
-}
-#div-1 input[type="submit"]{
-	width: 45%;
-	margin: 25px auto;
-	display: block;
-	font-size: 20px;
-}
-
-
-#div-2 {
+#music-content {
+	float: left;
 	background-color: rgba(55, 2, 0, 0.9);
 	border: 2px solid black;
 	padding: 5px;
@@ -61,20 +30,41 @@ nav li {
 	height: 350px;
 	margin-top: 75px;
 	color: white;
-	/*opacity: 0.2;*/
 }
-#div-2 h1 {
+#music-content h1 {
 	font-size: 14px;
 	display: inline-block;
 
 }
-#div-2 p {
+#music-content p {
 	display: block;
 	margin: 6px;
 	font-size: 12px;
 	display: inline-block;
 }
 
+#filter-music-div {
+	float: right;
+	background-color: rgba(55, 2, 0, 0.9);
+	border: 2px solid black;
+	padding: 5px;
+	display: inline-block;
+	width: 550px;
+	height: 350px;
+	margin-top: 75px;
+	color: white;
+}
+#filter-music-div h1 {
+	font-size: 14px;
+	display: inline-block;
+
+}
+#filter-music-div p {
+	display: block;
+	margin: 6px;
+	font-size: 12px;
+	display: inline-block;
+}
 
 .genre {
 	display: inline-block;
@@ -105,21 +95,9 @@ label {
 	display: none;
 }
 
-#parentdiv {
-
-}
-
 #inputmusic {
 	padding: 55px;
 	color: white;
-}
-
-.addMusicClass {
-	/*margin-top: 75px;*/
-}
-
-.listbar {
-	/*padding: 75px;*/
 }
 
 .deleteSong {
@@ -130,15 +108,8 @@ label {
 	margin-left: 200px;
 }
 
-#viewmusic {
-	/*color: white;
-	background-color: white;*/
-}
-
 #addmusic {
-	/*color: white;*/
 	color: white;
-
 }
 
 
