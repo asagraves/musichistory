@@ -21,7 +21,7 @@ nav li {
 }
 
 #music-content {
-	float: left;
+	margin-left: 50px;
 	background-color: rgba(55, 2, 0, 0.9);
 	border: 2px solid black;
 	padding: 5px;
