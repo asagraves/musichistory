@@ -45,9 +45,9 @@ nav li {
 
 #filter-music-div {
 	float: right;
+	margin-right: 25%;
 	background-color: rgba(55, 2, 0, 0.9);
 	border: 2px solid black;
-	padding: 5px;
 	display: inline-block;
 	width: 550px;
 	height: 350px;
@@ -64,6 +64,18 @@ nav li {
 	margin: 6px;
 	font-size: 12px;
 	display: inline-block;
+}
+
+#add_form {
+	margin-left: 50px;
+	background-color: rgba(55, 2, 0, 0.9);
+	border: 2px solid black;
+	padding: 5px;
+	display: inline-block;
+	width: 550px;
+	height: 350px;
+	margin-top: 75px;
+	color: white;
 }
 
 .genre {
