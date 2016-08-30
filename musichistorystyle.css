@@ -45,7 +45,7 @@ nav li {
 
 #filter-music-div {
 	float: right;
-	margin-right: 25%;
+	margin-right: 115px;
 	background-color: rgba(55, 2, 0, 0.9);
 	border: 2px solid black;
 	display: inline-block;
